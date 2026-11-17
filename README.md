@@ -1,3 +1,26 @@
+![Ovia Inc — LangChain logo, from the upstream repository's own assets](.github/images/logo-dark.svg)
+
+## Ovia Inc — LangChain fork
+
+This repository is a fork of [langchain-ai/langchain](https://github.com/langchain-ai/langchain), held in the Ovia Inc collection for evaluation. Modifications by Ovia Inc: this header (Ovia section, story, and reference note), added November 2026 as part of the import pass that widened the collection beyond the weekly digest. Upstream code and content are otherwise unchanged from the fork point, except where a later commit says so. All credit for the project belongs to the upstream authors and contributors; the licence is MIT, as recorded in the upstream repository.
+
+### What this is
+
+LangChain is a framework for building agents and LLM-powered applications. It chains together interoperable components and third-party integrations to simplify AI application development while future-proofing decisions as the underlying technology evolves. The wider ecosystem around the framework includes LangGraph for controllable agent workflows, a JavaScript/TypeScript equivalent, Deep Agents for higher-level agent patterns, and LangSmith for developing, debugging, and deploying agents and LLM applications.
+
+### Story
+
+LangChain grew from a component library for LLM applications into what its own README now calls "the agent engineering platform" — the framework layer underneath a large share of the agent tooling built since. The collection already held the LangGraph fork, the graph-orchestration framework built on LangChain, along with CrewAI and AutoGen on the same shelf. The base framework itself was the missing piece: evaluation notes on the orchestration layer kept pointing back at the components, model interfaces, and integration surface defined here. We forked langchain-ai/langchain in November 2026 to close that gap, so the frameworks shelf reads as a stack — components and integrations at the base, graph orchestration above them, crew and conversation frameworks beside them.
+
+### What we evaluate
+
+- The component model: how model interfaces, tools, and integrations compose, and where the seams sit for swapping providers.
+- The relationship between the base framework and LangGraph — when plain chaining suffices and when graph control earns its complexity.
+- Deep Agents as the higher-level pattern layer: planning, sub-agents, and filesystem use as built-in capabilities.
+- Fit against the crew and conversation frameworks already on the shelf, on the same evaluation workloads.
+
+---
+
 <div align="center">
   <a href="https://docs.langchain.com/oss/python/langchain/overview">
     <picture>
